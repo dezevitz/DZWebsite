@@ -1,13 +1,21 @@
-import { useTheme } from '@mui/material/styles';
+import { alignProperty } from '@mui/material/styles/cssUtils';
+import theme from '../../utils/theme';
+import ElevatorPitch from './ElevatorPitch';
 
-function HomeScreen() {
-    const theme = useTheme();
-    
+function HomeScreen() {    
     return (
-        <>
-            {/* TODO: USE CUSTOM COMPONENTS SO YOU DONT HAVE TO USE "useTheme" */}
-            <h1 style={{ color: theme.colors.primary}}>HELLO</h1>
-        </>
+        <div
+            style={{ 
+                width: '100%',
+                height: '100vh',
+                backgroundColor: theme.colors.primaryDark,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
+        >
+            <ElevatorPitch/>
+        </div>
     )
 }
 

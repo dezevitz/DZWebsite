@@ -6,19 +6,24 @@ const theme = createTheme({
     colors: {
       
       black: "#000000",
-      white: "ffffff",
+      white: "#ffffff",
 
       // light mode
       primaryDark: '#0C6170',
       primary: '#37BEB0',
       primaryLight: '#A4E5E0',
-      secondaryLight: 'DBF5F0',
+      secondaryLight: '#DBF5F0',
 
       // TODO: DARK MODE
     },
     fonts: {
       primary: 'Raleway, sans-serif',
       // Define more font variables
+    },
+    typography: {
+      allVariants: {
+        color: "#000000"
+      }
     }
   });
   
