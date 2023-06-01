@@ -7,9 +7,9 @@ import { ThemeProvider } from '@mui/material/styles';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-  `    <div className="App">
+      <div className="App">
         <header className="App-header">
-          <HomeScreen theme={theme}/>
+          <HomeScreen/>
         </header>
       </div>
     </ThemeProvider>
