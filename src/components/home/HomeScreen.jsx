@@ -1,5 +1,3 @@
-
-import { alignProperty } from '@mui/material/styles/cssUtils';
 import theme from '../../utils/theme';
 import ElevatorPitch from './ElevatorPitch';
 

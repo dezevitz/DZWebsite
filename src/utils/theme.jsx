@@ -1,6 +1,4 @@
-import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     colors: {
@@ -18,7 +16,7 @@ const theme = createTheme({
     },
     fonts: {
       primary: 'Raleway, sans-serif',
-      // Define more font variables
+      // TODO: Use Raleway font from here
     },
     typography: {
       allVariants: {

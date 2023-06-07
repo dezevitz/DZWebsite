@@ -1,14 +1,14 @@
-import { Grid, Avatar } from '@mui/material';
+import { Grid } from '@mui/material';
 import BoxStyle from '../reusable/BoxStyle';
 import { ELEVATOR_PITCH } from '../../utils/strings';
 
 function ElevatorPitch() {    
     return (
-    <Grid container direction='row' alignItems='flex-start' paddingTop='10px'>
+    <Grid container direction='row' alignItems='flex-start' paddingTop='10px' paddingBottom='10px'>
         <Grid item xs={12} sm={4} paddingBottom='10px'>
-            <img
+            <img 
                 src="/images/profile.jpg" 
-                alt='Danielle Zevitz Profile Picture'
+                alt='Danielle Zevitz'
                 style={{
                     border: '5px solid',
                     borderRadius: '20px',
@@ -22,6 +22,7 @@ function ElevatorPitch() {
             <Grid container direction="column" spacing={2}>
                 <Grid item>
                     <BoxStyle
+                        data-testid="header"
                         text="Danielle Zevitz"
                         textVariant="h1"
                     />
