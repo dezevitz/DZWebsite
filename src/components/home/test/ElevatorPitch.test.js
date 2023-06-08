@@ -4,6 +4,12 @@ import ElevatorPitch from '../ElevatorPitch';
 import theme from '../../../utils/theme';
 import { ThemeProvider } from '@mui/material/styles';
 
+// describe('Home Page', ()=> {
+//   it('renders', ()=> {
+//     render(<ElevatorPitch/>)
+//   })
+// })
+
 test('renders all expected elements', () => {
   render(
     <ThemeProvider theme={theme}>
