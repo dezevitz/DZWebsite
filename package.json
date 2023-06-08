@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://daniellezevitz.tech",
   "dependencies": {
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.3",
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll --testMatch '**/src/**/test/*.test.js'",
+    "test": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
