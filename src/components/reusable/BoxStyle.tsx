@@ -1,8 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Typography, { TypographyProps, TypographyPropsVariantOverrides, TypographyTypeMap } from '@mui/material/Typography';
-import { OverridableStringUnion } from '@mui/types';
-import { Variant } from '@testing-library/react';
+import Typography, { TypographyTypeMap } from '@mui/material/Typography';
 
 type BoxStyleProps = {
   text: string;
