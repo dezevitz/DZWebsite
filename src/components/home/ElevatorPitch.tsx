@@ -1,6 +1,7 @@
-import { Grid } from '@mui/material';
 import BoxStyle from '../reusable/BoxStyle';
 import { ELEVATOR_PITCH } from '../../utils/strings';
+import Grid from '@mui/material/Grid';
+import React from 'react';
 
 function ElevatorPitch() {    
     return (
