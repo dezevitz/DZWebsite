@@ -1,3 +1,4 @@
+import React from 'react';
 import theme from '../../utils/theme';
 import ElevatorPitch from './ElevatorPitch';
 
@@ -6,7 +7,7 @@ function HomeScreen() {
         <div
             style={{ 
                 width: '100%',
-                backgroundColor: theme.colors.primaryDark,
+                backgroundColor: theme.palette.primary.dark,
                 justifyContent: 'center',
                 alignItems: 'center',
                 minHeight: '100vh',
