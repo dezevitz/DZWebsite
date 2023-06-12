@@ -4,7 +4,6 @@ import React from 'react';
 import { Box } from '@mui/system';
 import HeaderStyle from '../reusable/HeaderStyle';
 import theme from '../../utils/theme';
-import { Divider } from '@mui/material';
 
 function ElevatorPitch() {    
     return (
