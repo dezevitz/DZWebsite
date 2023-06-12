@@ -16,11 +16,18 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Raleway, sans-serif',
     allVariants: {
       color: '#000000',
     },
-  },
+    fontFamily: ['Raleway', "sans-serif"].join(","),
+    h2: {
+      fontWeight: '900'
+    },
+    h1: {
+      fontWeight: '900'
+    }
+  }
+  
 });
 
 export default theme;

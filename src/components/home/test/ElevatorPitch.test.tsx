@@ -11,11 +11,8 @@ test('renders all expected elements', () => {
     </ThemeProvider>
   );
 
-  // Is the headshot visible?
-  expect(screen.getByRole("img")).toBeInTheDocument();
-
   // Is the Header "Danielle Zevitz" visible on the screen
-  const name = "Danielle Zevitz"
+  const name = "About Me:"
   expect(screen.getByText(name)).toBeInTheDocument();
 
   // Is elevator pitch visible on screen

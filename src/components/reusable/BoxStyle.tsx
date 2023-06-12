@@ -7,7 +7,7 @@ type BoxStyleProps = {
   textVariant?: TypographyTypeMap["props"]["variant"];
 }
 
-const BoxStyle: React.FC<BoxStyleProps> = ({ text, textVariant = "body1" }: BoxStyleProps) => (
+const BoxStyle: React.FC<BoxStyleProps> = ({ text, textVariant = "body1"}: BoxStyleProps) => (
   <Box
     sx={{
       backgroundColor: (theme) => theme.palette.secondary.main,
@@ -17,9 +17,10 @@ const BoxStyle: React.FC<BoxStyleProps> = ({ text, textVariant = "body1" }: BoxS
       boxShadow: '10px 10px 10px rgba(0,0,0,0.25)'
     }}
   >
-    <Typography variant={ textVariant } padding='10px'>
+    <Typography variant={textVariant} padding='10px'>
       {text}
     </Typography>
+
   </Box>
 );
 
