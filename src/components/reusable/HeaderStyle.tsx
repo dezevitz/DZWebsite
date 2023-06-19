@@ -17,7 +17,7 @@ const HeaderStyle: React.FC<HeaderProps> = ({
   <Typography 
     sx={{
       WebkitTextStroke: '3px black',
-      WebkitTextFillColor: (theme) => color,
+      WebkitTextFillColor: color,
       textShadow: '10px 10px 10px rgba(0,0,0,0.25)',
       typography: { md: textVariant , xs:'h2' }
     }}
