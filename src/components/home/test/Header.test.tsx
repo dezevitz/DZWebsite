@@ -21,4 +21,6 @@ test('renders all expected elements', () => {
   // Is Linkedin Icon Visible?
   expect(screen.getByTestId("LinkedIn")).toBeInTheDocument();
 
+  // Is Email Icon Visible?
+  expect(screen.getByTestId("Gmail")).toBeInTheDocument();
 });
