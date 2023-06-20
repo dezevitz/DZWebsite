@@ -12,10 +12,13 @@ test('renders all expected elements', () => {
   );
 
   // Is the headshot visible?
-  expect(screen.getByRole("img")).toBeInTheDocument();
+  expect(screen.getByTestId("Profile")).toBeInTheDocument();
     
   // Is the Header "Danielle Zevitz" visible on the screen
   const name = "Hi! I'm Danielle Zevitz!"
   expect(screen.getByText(name)).toBeInTheDocument();
+
+  // Is Linkedin Icon Visible?
+  expect(screen.getByTestId("LinkedIn")).toBeInTheDocument();
 
 });

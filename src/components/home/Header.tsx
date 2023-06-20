@@ -3,6 +3,7 @@ import React from "react"
 import HeaderStyle from "../reusable/HeaderStyle"
 import { INTRO } from "../../utils/strings"
 import theme from "../../utils/theme"
+import QuickLinks from "./QuickLinks"
 
 function Header() { 
     return (
@@ -20,7 +21,7 @@ function Header() {
             <Grid item xs={8} sm={4}>
                 <img 
                     src="/images/profile.jpg" 
-                    alt='Danielle Zevitz'
+                    data-testid= "Profile"
                     style={{
                         border: '5px solid',
                         borderRadius: '20px',
@@ -29,6 +30,7 @@ function Header() {
                         boxShadow: '10px 10px 10px rgba(0,0,0,0.25)'
                     }}
                 />
+                <QuickLinks/>
             </Grid>
         </Grid>
     )
