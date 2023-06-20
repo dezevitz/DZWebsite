@@ -16,6 +16,18 @@ test('linkedIn Button renders', () => {
   expect(linkedInButton).toBeInTheDocument();
 })
 
+test('Email Button renders', () => {
+  render(
+    <ThemeProvider theme={theme}>
+      <QuickLinks/>
+    </ThemeProvider>
+  );
+
+  const linkedInButton = screen.getByTestId("Gmail")
+  expect(linkedInButton).toBeInTheDocument();
+})
+
+
 test("clicking IconBoxStyleButton triggers action", () => {
   const handleClick = jest.fn();
 

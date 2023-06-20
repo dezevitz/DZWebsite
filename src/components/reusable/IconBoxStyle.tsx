@@ -1,26 +1,25 @@
 import React from 'react';
 import { Card, IconButton } from '@mui/material';
+import theme from '../../utils/theme';
 
 type IconBoxStyleProps = {
   iconPath: string;
   iconLabel: string;
-  onClick: () => void
+  onClick: () => void;
+  color?: string
 }
 
-const IconBoxStyle: React.FC<IconBoxStyleProps> = ({ iconPath, iconLabel, onClick}: IconBoxStyleProps) => (
+const IconBoxStyle: React.FC<IconBoxStyleProps> = ({ iconPath, iconLabel, onClick, color = theme.palette.common.white}: IconBoxStyleProps) => (
   <IconButton 
     aria-label={ iconLabel } 
     data-testid= { iconLabel }
     onClick={onClick}
-    sx={{
-      width:"70%"
-    }}
   >
     <Card
       component="img"
       src={ iconPath }
       sx={{
-        backgroundColor: (theme) => theme.palette.common.white,
+        backgroundColor: color,
         border: '3px solid',
         borderColor: (theme) => theme.palette.common.black,
         borderRadius: '10px',
