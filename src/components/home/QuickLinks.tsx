@@ -16,16 +16,6 @@ function QuickLinks() {
             padding: '10px'
             }}
         >
-            {/* sm={7} md={5} lg={4} */}
-            <Grid item xs={4} sm={5} md={3}>
-                <IconBoxStyle 
-                    iconPath="/images/linkedinIcon.png" 
-                    iconLabel="LinkedIn"
-                    onClick={() => {
-                        window.open('https://www.linkedin.com/in/daniellezevitz/', '_blank');
-                    }}
-                ></IconBoxStyle>
-            </Grid>
             <Grid item xs={4} sm={5} md={3}>
                 <IconBoxStyle 
                     iconPath="/images/gmailIcon.png" 
@@ -34,6 +24,15 @@ function QuickLinks() {
                         window.open('mailto:dezevitz@gmail.com', '_blank');
                     }}
                     color="#FF0000"
+                ></IconBoxStyle>
+            </Grid>
+            <Grid item xs={4} sm={5} md={3}>
+                <IconBoxStyle 
+                    iconPath="/images/linkedinIcon.png" 
+                    iconLabel="LinkedIn"
+                    onClick={() => {
+                        window.open('https://www.linkedin.com/in/daniellezevitz/', '_blank');
+                    }}
                 ></IconBoxStyle>
             </Grid>
         </Grid>
