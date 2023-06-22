@@ -12,8 +12,8 @@ test('linkedIn Button renders', () => {
     </ThemeProvider>
   );
 
-  const linkedInButton = screen.getByTestId("LinkedIn")
-  expect(linkedInButton).toBeInTheDocument();
+  const button = screen.getByTestId("LinkedIn")
+  expect(button).toBeInTheDocument();
 })
 
 test('Email Button renders', () => {
@@ -23,9 +23,21 @@ test('Email Button renders', () => {
     </ThemeProvider>
   );
 
-  const linkedInButton = screen.getByTestId("Gmail")
-  expect(linkedInButton).toBeInTheDocument();
+  const button = screen.getByTestId("Gmail")
+  expect(button).toBeInTheDocument();
 })
+
+test('Resume Button renders', () => {
+  render(
+    <ThemeProvider theme={theme}>
+      <QuickLinks/>
+    </ThemeProvider>
+  );
+
+  const button = screen.getByTestId("Resume")
+  expect(button).toBeInTheDocument();
+})
+
 
 
 test("clicking IconBoxStyleButton triggers action", () => {

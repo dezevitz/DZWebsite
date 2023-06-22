@@ -16,7 +16,17 @@ function QuickLinks() {
             padding: '10px'
             }}
         >
-            <Grid item xs={4} sm={5} md={3}>
+            <Grid item xs={4} md={3}>
+                <IconBoxStyle 
+                    iconPath="/images/cvIcon.png" 
+                    iconLabel="Resume"
+                    onClick={() => {
+                        window.open('/resume', '_self');
+                    }}
+                    color="#3366CC"
+                ></IconBoxStyle>
+            </Grid>
+            <Grid item xs={4} md={3}>
                 <IconBoxStyle 
                     iconPath="/images/gmailIcon.png" 
                     iconLabel="Gmail"
@@ -26,7 +36,7 @@ function QuickLinks() {
                     color="#FF0000"
                 ></IconBoxStyle>
             </Grid>
-            <Grid item xs={4} sm={5} md={3}>
+            <Grid item xs={4} md={3}>
                 <IconBoxStyle 
                     iconPath="/images/linkedinIcon.png" 
                     iconLabel="LinkedIn"
