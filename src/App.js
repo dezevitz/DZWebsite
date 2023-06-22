@@ -9,16 +9,16 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <ThemeProvider theme={theme}>
         <div className="App">
           <Routes>
-            <Route exact path="/" element={<HomeScreen/>} />
+            <Route exact path="" element={<HomeScreen/>} />
             <Route path="/resume" element={<ResumeScreen/>} />
           </Routes>
         </div>
       </ThemeProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
