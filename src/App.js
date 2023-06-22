@@ -9,7 +9,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={theme}>
         <div className="App">
           <Routes>
@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </div>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

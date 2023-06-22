@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <script>
+    const { pathname } = window.location;
+    if (pathname !== '/' && !pathname.includes('.html')) {
+      window.location.href = '/404.html';
+    }
+  </script>
+</head>
+<body>
+  <p>Page Not Found</p>
+</body>
+</html>
