@@ -1,6 +1,7 @@
 import React from "react"
 import IconBoxStyle from "../reusable/IconBoxStyle"
 import { Grid } from "@mui/material"
+import { LINKEDIN } from "../../utils/strings";
 
 function QuickLinks() {
     return (
@@ -41,7 +42,7 @@ function QuickLinks() {
                     iconPath="/images/linkedinIcon.png" 
                     iconLabel="LinkedIn"
                     onClick={() => {
-                        window.open('https://www.linkedin.com/in/daniellezevitz/', '_blank');
+                        window.open(LINKEDIN, '_blank', "noopener noreferrer");
                     }}
                 ></IconBoxStyle>
             </Grid>

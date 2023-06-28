@@ -1,13 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Typography, { TypographyTypeMap } from '@mui/material/Typography';
 
 type BoxStyleProps = {
-  text: string;
-  textVariant?: TypographyTypeMap["props"]["variant"];
+  children: React.ReactNode
 }
 
-const BoxStyle: React.FC<BoxStyleProps> = ({ text, textVariant = "body1"}: BoxStyleProps) => (
+const BoxStyle: React.FC<BoxStyleProps> = ({ children }: BoxStyleProps) => (
   <Box
     sx={{
       backgroundColor: (theme) => theme.palette.secondary.main,
@@ -17,10 +15,7 @@ const BoxStyle: React.FC<BoxStyleProps> = ({ text, textVariant = "body1"}: BoxSt
       boxShadow: '10px 10px 10px rgba(0,0,0,0.25)'
     }}
   >
-    <Typography variant={textVariant} padding='10px'>
-      {text}
-    </Typography>
-
+    {children}
   </Box>
 );
 
